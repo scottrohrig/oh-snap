@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // React.createElement("div", : props {}, : children [
+    // React.createElement("h1", {}, "Ginger").
+    // React.createElement("p", {}, "breed: Brittany Spaniel")
+    // ]) is equivalent to return (<div><h1>Ginger</h1><p>breed:...</p></div>)
+    <div>
+      <Nav />
+      <main>
+        <About />
+      </main>
     </div>
   );
 }

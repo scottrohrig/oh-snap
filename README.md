@@ -1,6 +1,6 @@
 # Oh Snap!
 
-A photography portfolio site built with React, created using the create-react-app CLI. This is a single-page application that uses React state, props, Hooks, and reusable UI components, as well as Jest to test these components.
+A photography portfolio site built with React, created using the create-react-app CLI. This is a single-page application (SPA) that uses React state, props, Hooks, and reusable UI components, as well as Jest to test these components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
