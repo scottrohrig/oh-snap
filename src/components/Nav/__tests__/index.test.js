@@ -7,3 +7,16 @@ import Nav from '..';
 // configure the testing env
 afterEach( cleanup );
 
+describe( 'Nav component', () => {
+  // baseline test
+  it( 'renders', () => {
+    render( <Nav /> );
+  } );
+
+  // snapshot test
+  it( 'matches snapshot', () => {
+    const { asFragment } = render( <Nav /> );
+
+    expect( asFragment() ).toMatchSnapshot();   
+  } );
+} );
