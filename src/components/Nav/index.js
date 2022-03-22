@@ -2,10 +2,7 @@ import React from 'react';
 const Nav = () => {
 
   const categories = [
-    {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
+    { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects', },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'food', description: 'Delicious delicacies' },
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, nature' },
@@ -18,13 +15,13 @@ const Nav = () => {
   return (
     <header>
       <h2>
-        <a href="/">
+        <a data-testid='link' href="/">
           <span role='img' aria-label='camera'> 📸</span> Oh Snap!
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
-          <li className="mx-2"><a href="#about" onClick={ () => { categorySelected( 'about' ); } }>about me</a></li>
+          <li className="mx-2"><a data-testid='about' href="#about" onClick={ () => { categorySelected( 'about' ); } }>about me</a></li>
           <li><span onClick={ () => { categorySelected( 'contact' ); } }>contact</span></li>
           { categories.map( ( category ) => (
             <li className="mx-1" key={ category.name } >
